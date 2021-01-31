@@ -1,0 +1,28 @@
+<h1>{{ title }}</h1>
+
+<!-- Ejemplo 1 incrementando dentro del click -->
+
+<button (click)=" numeroEjemplo1 = numeroEjemplo1 +1">+ 1</button>
+
+<span>{{ numeroEjemplo1 }}</span>
+
+<button (click)=" numeroEjemplo1 = numeroEjemplo1 -1 ">- 1</button>
+<br>
+<br>
+<!-- Ejemplo 2 incrementado con un metodo sumar() y restar() -->
+
+<button (click)="sumar(+2)">+ 2</button>
+
+<span>{{ numeroEjemplo2 }}</span>
+
+<button (click)="restar()">- 2</button>
+
+<br><br>
+
+<span style="margin-left: 5px;"><strong> la base es: 5</strong></span>
+<br>
+<button (click)="acumular( base )">+ 5</button>
+
+<span>{{ numero }}</span>
+
+<button (click)="acumular( -base )">- 5</button>
